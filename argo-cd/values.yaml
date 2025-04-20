@@ -46,7 +46,7 @@ argo-cd:
         # -- list of known host in format:
         # [host]:port key-type key
         # Example
-        # [ssh.github.com]:443 ssh-rsa qgSdfOuiYhew/+afhQnvjfjhnhnqgSdfOuiYhew/+afhQnvjfjhnhn
+        [ssh.github.com]:443 ssh-rsa qgSdfOuiYhew/+afhQnvjfjhnhnqgSdfOuiYhew/+afhQnvjfjhnhn
 
   # we use Keycloak so no DEX is required
   dex:
