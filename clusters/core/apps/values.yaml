@@ -255,8 +255,8 @@ tekton-cache:
   namespace: tekton-cache
 
 tekton:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: tekton-pipelines
 
 tekton-custom-task:
