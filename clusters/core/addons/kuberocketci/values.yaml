@@ -157,6 +157,7 @@ edp-install:
     image:
       repository: nikolaymarusenko/headlamp
       tag: 0.22.0
+      pullPolicy: Always
     enabled: true
     config:
       # -- base url path at which headlamp should run
