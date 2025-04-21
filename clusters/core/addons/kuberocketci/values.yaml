@@ -209,7 +209,7 @@ edp-install:
         # -- Tekton-cache container image.
         repository: nikolaymarusenko/tekton-cache
         tag: "0.1.2"
-      enabled: true
+      enabled: false
       # Tekton cache endpoint for pipeline-library helm chart. See charts/pipelines-library/templates/resources/cm-tekton-cache.yaml
       # url: http://tekton-cache:8080
 
