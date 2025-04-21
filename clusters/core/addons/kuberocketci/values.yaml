@@ -155,7 +155,7 @@ edp-install:
 
   edp-headlamp:
     image:
-      repository: nikolaymarusenko/headlamp
+      repository: nikolaymarusenko/edp-headlamp
       tag: 0.22.0
       pullPolicy: Always
     enabled: true
