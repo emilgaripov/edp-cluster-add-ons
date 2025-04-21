@@ -85,9 +85,9 @@ edp-install:
 
   codebase-operator:
     enabled: true
-    # image:
-    #   repository: epamedp/codebase-operator
-    #   tag:
+    image:
+      repository: nikolaymarusenko/codebase-operator
+      tag: 2.27.2
     # -- Optional array of imagePullSecrets containing private registry credentials
     ## Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry
     # imagePullSecrets: []
@@ -154,6 +154,9 @@ edp-install:
     #     icon: icon_in_base64
 
   edp-headlamp:
+    image:
+      repository: nikolaymarusenko/headlamp
+      tag: 0.22.0
     enabled: true
     config:
       # -- base url path at which headlamp should run
@@ -210,6 +213,11 @@ edp-install:
         # imagePullSecrets: []
 
     interceptor:
+      image:
+        repository: nikolaymarusenko/edp-tekton
+        pullPolicy: IfNotPresent
+        # -- Overrides the image tag whose default is the chart appVersion.
+        tag: 0.18.0
       # -- Deploy KubeRocketCI interceptor as a part of pipeline library when true. Default: true
       enabled: true
       # -- Optional array of imagePullSecrets containing private registry credentials
@@ -364,9 +372,9 @@ edp-install:
     #         tls: []
   cd-pipeline-operator:
     enabled: true
-    # image:
-    #   repository: epamedp/cd-pipeline-operator
-    #   tag:
+    image:
+      repository: nikolaymarusenko/edp-cd-pipeline-operator
+      tag: 2.25.1
     # -- Optional array of imagePullSecrets containing private registry credentials
     ## Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry
     # imagePullSecrets: []
