@@ -202,6 +202,12 @@ edp-install:
       imagePullSecrets: []
 
     tekton-cache:
+      image:
+        # -- Set the image registry, default to Docker Hub; can be customized to use an alternative provider
+        registry: "docker.io"
+        # -- Tekton-cache container image.
+        repository: nikolaymarusenko/tekton-cache
+        tag: "0.1.2"
       enabled: true
       # Tekton cache endpoint for pipeline-library helm chart. See charts/pipelines-library/templates/resources/cm-tekton-cache.yaml
       # url: http://tekton-cache:8080
