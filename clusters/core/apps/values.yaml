@@ -174,8 +174,8 @@ kuberocketci-rbac:
   namespace: krci-security
 
 kuberocketci:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci
 
 minio-operator:
