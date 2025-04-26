@@ -21,8 +21,8 @@ targetRevision: "main"
 # -- ArgoCD Deployment
 argo-cd:
   # -- whether to create the namespace or not
-  createNamespace: true
-  enable: true
+  createNamespace: false
+  enable: false
   namespace: krci
 
 atlantis:
@@ -143,8 +143,8 @@ keda:
   namespace: keda
 
 keycloak:
-  createNamespace: true
-  enable: true
+  createNamespace: false
+  enable: false
   namespace: security
 
 keycloak-postgresql:
@@ -194,8 +194,8 @@ nexus-operator:
   namespace: nexus
 
 nexus:
-  createNamespace: true
-  enable: true
+  createNamespace: false
+  enable: false
   namespace: nexus
 
 # OAuth2 Proxy for tekton dashboard
