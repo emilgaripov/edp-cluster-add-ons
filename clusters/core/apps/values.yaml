@@ -143,18 +143,18 @@ keda:
   namespace: keda
 
 keycloak:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: security
 
 keycloak-postgresql:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: security
 
 keycloak-operator:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: keycloak-operator
 
 krakend:
@@ -169,13 +169,13 @@ kuberocketci-pipelines:
   repoUrl: ssh://git@github.com:22/epmd-edp/helm-helm-pipeline.git
 
 kuberocketci-rbac:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci-security
 
 kuberocketci:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci
 
 minio-operator:
@@ -227,23 +227,23 @@ pgadmin:
 
 # Postgres Operator
 postgres-operator:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: postgres-operator
 
 prometheus-operator:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: monitoring
 
 prometheus-blackbox-exporter:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: monitoring
 
 redis-operator:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: redis-operator
 
 report-portal:
@@ -265,23 +265,23 @@ storage-class:
   enable: false
 
 tekton-cache:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: tekton-cache
 
 tekton:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: tekton-pipelines
 
 tekton-custom-task:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci
 
 tekton-dashboard:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci
 
 vault-kms:
@@ -295,11 +295,11 @@ vault-okd:
   namespace: vault
 
 vault:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: vault
 
 vault-operator:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: vault
