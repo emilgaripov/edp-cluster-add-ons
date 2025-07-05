@@ -56,8 +56,8 @@ capsule-tenant:
 # -- Cert Manager
 cert-manager:
   # -- whether to create the namespace or not
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: cert-manager
 
 # -- DefectDojo
@@ -73,8 +73,8 @@ dependency-track:
   namespace: dependency-track
 
 external-secrets:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: external-secrets
 
 # fluent-bit can be installed as a single component
@@ -163,8 +163,8 @@ krakend:
   namespace: krci-krakend
 
 kuberocketci-pipelines:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: krci
   repoUrl: ssh://git@github.com:22/epmd-edp/helm-helm-pipeline.git
 
