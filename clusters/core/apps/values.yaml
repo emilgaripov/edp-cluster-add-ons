@@ -101,8 +101,8 @@ harbor-ha-okd:
   namespace: harbor
 
 ingress-nginx:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
   namespace: ingress-nginx
 
 ingress-nginx-external:
