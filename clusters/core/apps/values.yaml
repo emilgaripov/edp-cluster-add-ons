@@ -22,7 +22,7 @@ targetRevision: "main"
 argo-cd:
   # -- whether to create the namespace or not
   createNamespace: false
-  enable: false
+  enable: true
   namespace: krci
 
 atlantis:
