@@ -254,7 +254,7 @@ spec:
     spec:
       ingressClassName: "nginx"
       rules:
-        - host: vault.example.com
+        - host: vault.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz
           http:
             paths:
               - path: /
