@@ -301,5 +301,5 @@ vault:
 
 vault-operator:
   createNamespace: true
-  enable: false
+  enable: true
   namespace: vault
