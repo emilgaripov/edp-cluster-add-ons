@@ -23,7 +23,7 @@ spec:
             storage: 7Gi
   backups:
     pgbackrest:
-      image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.47-0
+      image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.53-0
       repos:
         - name: repo1
           volume:
