@@ -296,10 +296,10 @@ vault-okd:
 
 vault:
   createNamespace: true
-  enable: true
+  enable: false
   namespace: vault
 
 vault-operator:
   createNamespace: true
-  enable: true
+  enable: false
   namespace: vault
