@@ -14,6 +14,18 @@ spec:
   #     - name: regcred
   bankVaultsImage: ghcr.io/bank-vaults/bank-vaults:v1.31.2
 
+  vaultPodSpec:
+    toleration:
+      - key: "ToBeDeletedByClusterAutoscaler"
+        operator: "Exists"
+        effect: "NoSchedule"
+      - key: "node.kubernetes.io/unschedulable"
+        operator: "Exists"
+        effect: "NoSchedule"
+      - key: "node.cluster.x-k8s.io/outdated-revision"
+        operator: "Exists"
+        effect: "PreferNoSchedule"
+
   config:
     storage:
       postgresql:
