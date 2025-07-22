@@ -16,9 +16,27 @@ spec:
     # allow to deploy to specific server (local in our case)
       server: https://kubernetes.default.svc
   # Deny all cluster-scoped resources from being created, except for Namespace
+  # clusterResourceWhitelist:
+  # - group: '*'
+  #   kind: '*'
   clusterResourceWhitelist:
-  - group: '*'
-    kind: '*'
+  - group: authorization.openshift.io
+    kind: ClusterRoleBinding
+  - group: authorization.openshift.io
+    kind: ClusterRole
+  - group: rbac.authorization.k8s.io
+    kind: ClusterRoleBinding
+  - group: apiextensions.k8s.io
+    kind: CustomResourceDefinition
+  - group: rbac.authorization.k8s.io
+    kind: ClusterRole
+  - group: admissionregistration.k8s.io
+    kind: ValidatingWebhookConfiguration
+  - group: capsule.clastix.io
+    kind: Tenant
+  - group: security.openshift.io
+    kind: SecurityContextConstraints
+    kind: 'AppProject'
   # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
   namespaceResourceBlacklist:
   - group: ''
