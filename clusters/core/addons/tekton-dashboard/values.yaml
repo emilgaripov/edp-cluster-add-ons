@@ -1,6 +1,6 @@
 global:
   # -- a cluster DNS wildcard name
-  dnsWildCard: ""
+  dnsWildCard: "tekton.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
   # -- platform type that can be "kubernetes" or "openshift"
   platform: "kubernetes"
 
@@ -60,7 +60,7 @@ dashboard:
       # nginx.ingress.kubernetes.io/auth-url: 'http://oauth2-proxy.oauth2-proxy.svc.cluster.local:80/oauth2/auth'
     # -- Defines the base URL for the tekton.
     # -- If not defined, it will be created by the pattern "tekton-[namespace].[global DNS wildcard]"
-    host: ""
+    host: "tekton.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
     # -- Ingress TLS configuration
     # -- If hosts not defined, they will be created by the pattern "tekton-[namespace].[global DNS wildcard]"
     tls: []
