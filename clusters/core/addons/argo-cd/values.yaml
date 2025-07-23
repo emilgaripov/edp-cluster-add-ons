@@ -2,7 +2,7 @@ argo-cd:
   global:
     # -- Default domain used by all components
     ## Used for ingresses, certificates, SSO, notifications, etc.
-    domain: argocd-dev.example.com
+    domain: argocd-dev-stage.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz
 
   configs:
     secret:
@@ -10,7 +10,7 @@ argo-cd:
       createSecret: true
     cm:
       # required when SSO is enabled
-      url: "https://argocd-dev.example.com"
+      url: "https://argocd-dev-stage.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
       exec.enabled: true
       resource.exclusions: |
         - apiGroups:
@@ -52,8 +52,6 @@ argo-cd:
       #   [host]:port key-type key
       #   Example
       #   [ssh.github.com]:443 ssh-rsa qgSdfOuiYhew/+afhQnvjfjhnhnqgSdfOuiYhew/+afhQnvjfjhnhn
-
-
       knownHosts: |
         [ssh.github.com]:443 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
         [ssh.github.com]:443 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
@@ -93,8 +91,8 @@ argo-cd:
 
     # -- Enable after nginx-ingress is installed
     ingress:
-      enabled: false
-      hostname: "argocd-dev.example.com"
+      enabled: true
+      hostname: "argocd-dev-stage.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
 
   # Disabled for multitenancy env with single instance deployment
   # applicationSet:
