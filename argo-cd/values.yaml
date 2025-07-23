@@ -2,7 +2,7 @@ argo-cd:
   global:
     # -- Default domain used by all components
     ## Used for ingresses, certificates, SSO, notifications, etc.
-    domain: argocd.example.com
+    domain: argocd.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz
 
   configs:
     secret:
@@ -10,7 +10,7 @@ argo-cd:
       createSecret: true
     cm:
       # required when SSO is enabled
-      url: "https://argocd.example.com"
+      url: "https://argocd.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
       exec.enabled: true
       resource.exclusions: |
         - apiGroups:
@@ -67,8 +67,8 @@ argo-cd:
 
     # -- Enable after nginx-ingress is installed
     ingress:
-      enabled: false
-      hostname: "argocd.example.com"
+      enabled: true
+      hostname: "argocd.cluster-dev-stage.cozystack-dev-stage-1.appelloproject.xyz"
 
   # Disabled for multitenancy env with single instance deployment
   # applicationSet:
