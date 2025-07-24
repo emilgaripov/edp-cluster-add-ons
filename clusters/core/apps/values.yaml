@@ -167,7 +167,7 @@ kuberocketci-pipelines:
   enable: true
   namespace: krci
   # repoUrl: ssh://git@github.com:22/epmd-edp/helm-helm-pipeline.git git@github.com:22.emilgaripov/quarkus.git
-  repoUrl: ssh://git@github.com:22.emilgaripov/quarkus.git
+  repoUrl: ssh://git@github.com:22/emilgaripov/quarkus.git
 
 kuberocketci-rbac:
   createNamespace: true
